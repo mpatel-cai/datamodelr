@@ -1,0 +1,45 @@
+---
+title: "C3 UMLS Data Model"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{C3 UMLS Data Model}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(neRd)
+library(caiconnect2)
+```
+
+
+```{r}
+source_data_dict <- 
+  query_c3(sql_statement = 
+             render_pg_query(schema = "umls"),
+           expiration_value = 0) 
+
+source_data_dict
+```
+
+```{r}
+c3_umls_dm <- 
+  as.data_model(source_data_dict$value)
+c3_umls_dm
+```
+
+```{r}
+c3_umls_dm <- 
+  as.data_model(source_data_dict$value %>% 
+                  rubix::filter_at_grepl(col = table, 
+                                         grepl_phrase = "^mr"))
+c3_umls_dm
+```
+

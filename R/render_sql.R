@@ -55,7 +55,7 @@ render_rs_query <- function(schema) {
   file_name <-
     system.file(package ="datamodelr",
                 "sql",
-                "postgres.sql")
+                "redshift.sql")
   glue::glue(
     paste(readLines(file_name),
           collapse = "\n"))
