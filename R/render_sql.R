@@ -21,7 +21,7 @@ render_pg_query <- function(schema) {
   stopifnot(!missing(schema))
 
   file_name <-
-    system.file(package ="datamodelr",
+    system.file(package ="neRd",
                 "sql",
                 "postgres.sql")
   glue::glue(
@@ -53,7 +53,7 @@ render_rs_query <- function(schema) {
   stopifnot(!missing(schema))
 
   file_name <-
-    system.file(package ="datamodelr",
+    system.file(package ="neRd",
                 "sql",
                 "redshift.sql")
   glue::glue(
