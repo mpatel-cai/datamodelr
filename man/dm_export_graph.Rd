@@ -4,8 +4,13 @@
 \alias{dm_export_graph}
 \title{Export graph to file}
 \usage{
-dm_export_graph(graph, file_name = NULL, file_type = NULL, width = NULL,
-  height = NULL)
+dm_export_graph(
+  graph,
+  file_name = NULL,
+  file_type = NULL,
+  width = NULL,
+  height = NULL
+)
 }
 \arguments{
 \item{graph}{a graph object}

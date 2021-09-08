@@ -4,9 +4,18 @@
 \alias{dm_create_graph}
 \title{Create a graph object from data model object}
 \usage{
-dm_create_graph(dm, rankdir = "BT", graph_name = "Data Model",
-  graph_attrs = "", node_attrs = "", edge_attrs = "", view_type = "all",
-  focus = NULL, col_attr = "column", columnArrows = FALSE)
+dm_create_graph(
+  dm,
+  rankdir = "BT",
+  graph_name = "Data Model",
+  graph_attrs = "",
+  node_attrs = "",
+  edge_attrs = "",
+  view_type = "all",
+  focus = NULL,
+  col_attr = "column",
+  columnArrows = FALSE
+)
 }
 \arguments{
 \item{dm}{A data model object}

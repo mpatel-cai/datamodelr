@@ -1,0 +1,25 @@
+#' datamodelr: data model diagrams
+#'
+#' Provides a simple structure to describe data models,
+#' functions to read data model from YAML file,
+#' and a function to create DiagrammeR graph objects:
+#'
+#'
+#' \itemize{
+#'   \item \pkg{datamodelr}'s data model object is a simple list of data frames which
+#'     represent the model entities and include elements and their relations.
+#'     See \code{\link{as.data_model}}.
+#'   \item Function \code{\link{as.data_model}} creates a
+#'     data model object from a data frame.
+#'   \item Function \code{\link{dm_read_yaml}} reads YAML format and creates a
+#'     data model object.
+#'   \item Function \code{\link{dm_create_graph}} creates a graph object from
+#'     data model object.
+#'   \item Function \code{\link{dm_render_graph}} renders a graph object (using
+#'   DiagrammeR package).
+#' }
+#'
+#' @docType package
+#' @name datamodelr-package
+#' @aliases datamodelr
+NULL

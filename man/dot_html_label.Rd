@@ -4,8 +4,13 @@
 \alias{dot_html_label}
 \title{Create a label}
 \usage{
-dot_html_label(x, title, palette_id = "default", col_attr = c("column"),
-  columnArrows = FALSE)
+dot_html_label(
+  x,
+  title,
+  palette_id = "default",
+  col_attr = c("column"),
+  columnArrows = FALSE
+)
 }
 \arguments{
 \item{x}{A data frame with column info}

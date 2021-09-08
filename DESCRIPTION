@@ -1,18 +1,15 @@
-Package: datamodelr
-Type: Package
-Title: Define and Plot Data Model Diagrams
-Version: 0.2.2.9002
-Date: 2017-12-17
+Package: neRd
+Type: R Package
+Title: Define and Plot ER Diagrams
+Version: 0.0.0.9000
 Author: Darko Bergant
-Maintainer: Darko Bergant <darko.bergant@gmail.com>
-URL: https://github.com/bergant/datamodelr
+Maintainer: Meera Patel <mpatel@concertai.com>
 Description: Data model definition with YAML file,
     extract from R data frames,
     reverse-engineering from PostgreSQL and SQL Server and
     rendering with DiagrammeR/graphviz.
 Depends:
     R (>= 3.3)
-License: MIT + file LICENSE
 Suggests:
     yaml,
     DiagrammeR,
@@ -20,4 +17,4 @@ Suggests:
     V8,
     rsvg
 LazyData: TRUE
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.1
